@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation System</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='Style.css')}}">
+</head>
+<body>
+
+<header>
+    <h1>Tune In - Music Recomendation System</h1>
+</header>
+<div class="nav-bar">
+    <nav>
+        <ul class="nav-tabs">
+			<button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Search');"><i class="fa fa-search"></i>Home</button>
+			<button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Playlists');"><i class="fa fa-plane w3-margin-right"></i>Playlists</button>
+        </ul>
+    </nav>
+</div>
+
+<div class="container">
+	<form action="C:/Users/sneha/KR Final project/templates/search.html" method="post">
+	<h2>Dive into the Rhythm of Your Favorites!</h2>
+        <label for="industry">Which music industry sets your soul on fire? </label>
+	<label for="industry">Choose your go-to playlist below and let the tunes play!</label>
+
+
+         <div class="button-container">
+            <button type="submit" class="button">Hollywood</button>
+            <button type="submit" class="button">Bollywood</button>
+            <button type="submit" class="button">Mollywood</button>
+            <button type="submit" class="button">Korean</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
